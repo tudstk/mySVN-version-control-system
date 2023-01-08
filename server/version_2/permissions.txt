@@ -1,0 +1,50 @@
+brotacul991:true
+char permLine[200];
+                        memset(permLine, 0, 200);
+                        strcpy(permLine, inputUsername);
+                        strcat(permLine, ":");
+                        strcat(permLine, "true");
+                        FILE* perms;
+                        if((perms = fopen("permissions.txt", "a+")) == NULL)
+                        {
+                            printf("[Server] Failed to open permissions file.\n");
+                        }
+                        fprintf(perms, "%s\n", permLine);
+                        fclose(perms);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ char line[1024];
+                        bool foundUser = false;
+                        FILE *findLocation = fopen("repo_paths.txt", "r");
+
+                        if (findLocation == NULL)
+                        {
+                            perror("Error opening file");
+                        }
+
+                        while (fgets(line, sizeof(line), findLocation))
+                        {
+                            if (strstr(line, inputUser) != NULL)
+                            {
+                                foundUser = true;
+                                printf("Found '%s' in line: %s", inputUser, line);
+                                char* pathTok = strtok(line, ":");
+                                pathTok = strtok(NULL, " ");
+                                strcpy(currentLocation, pathTok);
+                            }
+                        }
+
+                        fclose(findLocation);
+                        currentLocation[strlen(currentLocation) - 1] = '\0';
+                        printf("current LOCATION: %s\n", currentLocation);

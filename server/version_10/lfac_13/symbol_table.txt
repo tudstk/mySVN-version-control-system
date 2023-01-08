@@ -1,0 +1,7 @@
+Id - Tip - Scope - Valoare - Constant
+b - int - main - 0 - 0
+x - int - global - 0 - 0
+y - int - global - 9 - 0
+c - int - main - 0 - 0
+d - int - main - 0 - 0
+a - int - main - 0 - 0

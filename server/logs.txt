@@ -1,0 +1,141 @@
+(+) Fisierul 'cn.pdf' a fost ADAUGAT de elev.
+(+) Fisierul '2.c' a fost ADAUGAT de elev.
+(-) Fisierul 'dirfile.txt' a fost STERS de elev.
+MODIFICARE:
+                         fclose(perms);
+
+                        fclose(perms);asdasda
+.
+(*) Fisierul 'permissions.txt' a fost MODIFICAT de elev.
+^ Modificarile versiunii 4
+
+
+(-) Fisierul 'permissions.txt' a fost STERS de tudstk.
+(-) Directorul 'dir1' a fost STERS de tudstk.
+(+) Fisierul 'rezerva.txt' a fost ADAUGAT de tudstk.
+MODIFICARE:
+ 134136236
+
+134136236BUNAZIUA
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+MODIFICARE:
+ abcdefghijklmno12345fghasfassasaf
+
+abcdefghijklmno12345fghasfassasafHELLOWORLD
+.
+(*) Fisierul 'file1.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 5
+
+
+(-) Directorul 'dir1' a fost STERS de stud.
+(+) Fisierul 'limbaj.y' a fost ADAUGAT de stud.
+MODIFICARE:
+ 35262462fgh
+35262462fgh HELLO WORLD
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de stud.
+MODIFICARE:
+ abcdefghijklmno12345fghasfassasaf
+
+abcdefghijklmno12345fghasfassasafMIHNEA
+.
+(*) Fisierul 'file1.txt' a fost MODIFICAT de stud.
+^ Modificarile versiunii 5
+
+
+(+) Fisierul 'sdfsd.txt' a fost ADAUGAT de tudstk.
+(+) Directorul 'tempfolder' a fost ADAUGAT de tudstk.
+(-) Directorul 'tempfolder' a fost STERS de tudstk.
+^ Modificarile versiunii 6
+
+
+(+) Fisierul 'L4ex1.c' a fost ADAUGAT de tudstk.
+(+) Directorul 'Ex2' a fost ADAUGAT de tudstk.
+^ Modificarile versiunii 7
+
+
+(-) Directorul 'Ex2' a fost STERS de tudstk.
+(+) Directorul 'ACCES_TOKEN' a fost ADAUGAT de tudstk.
+(-) Fisierul 'permissions.txt' a fost STERS de tudstk.
+MODIFICARE:
+Old:134136236
+
+Updated:134136236HAI ARGENTINA
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 8
+
+
+^ Modificarile versiunii 9
+
+
+(+) Directorul 'lfac_13' a fost ADAUGAT de tudstk.
+(-) Directorul 'ACCES_TOKEN' a fost STERS de tudstk.
+MODIFICARE:
+Old:1904801298519015890
+
+Updated:1904801298519015890 CROATIA
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 9
+
+
+MODIFICARE:
+Old:35262462fgh HELLO WORLD
+
+Updated:35262462fgh HELLO WORLD RONALDO
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+MODIFICARE:
+Old:abcdefghijklmno12345fghasfassasafMIHNEA
+
+Updated:abcdefghijklmno12345fghasfassasafMIHNEAVASUILEE
+.
+(*) Fisierul 'file1.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 10
+
+
+(+) Directorul 'Lab9' a fost ADAUGAT de tudstk.
+(+) Fisierul 'sock_test.c' a fost ADAUGAT de tudstk.
+(-) Fisierul 'sample.txt' a fost STERS de tudstk.
+MODIFICARE:
+Old:int | cuPaine | float  a  |
+
+Updated:int | cuPaine | float  a  | hehe
+.
+(*) Fisierul 'functions_table.txt' a fost MODIFICAT de tudstk.
+MODIFICARE:
+Old:1904801298519015890 CROATIA
+
+Updated:1904801298519015890 CROATIA BRAZILIAA
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 10
+
+
+(+) Fisierul 'tema.l' a fost ADAUGAT de tudstk.
+(+) Fisierul 'sample2.txt' a fost ADAUGAT de tudstk.
+(-) Fisierul 'cliTcp.c' a fost STERS de tudstk.
+(+) Fisierul 'marcel.c' a fost ADAUGAT de tudstk.
+MODIFICARE:
+Old:134136236HAI ARGENTINA
+
+Updated:134136236HAI ARGENTINA ITALIA
+.
+(*) Fisierul 'file2.txt' a fost MODIFICAT de tudstk.
+MODIFICARE:
+Old:/home/tudor/Desktop/newSVN/client/miki/abc.txt
+
+Updated:/home/tudor/Desktop/newSVN/client/miki/zyx.txt
+.
+(*) Fisierul 'sdfsd.txt' a fost MODIFICAT de tudstk.
+MODIFICARE:
+Old:abcdefghijklmno12345fghasfassasafMIHNEA
+
+Updated:abcdefghijklmno12345fghasfassasafMIHNEA MIGUEL
+.
+(*) Fisierul 'file1.txt' a fost MODIFICAT de tudstk.
+^ Modificarile versiunii 11
+
+

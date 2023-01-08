@@ -1,0 +1,5 @@
+type  -  id  -  params
+
+int | salata | int  y  |
+int | deVarza | char  z  |
+int | cuPaine | float  a  |
