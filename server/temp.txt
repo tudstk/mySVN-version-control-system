@@ -1,10 +1,15 @@
-admin:granted
-elev:granted
-dorobanti12:denied
-brotaculcasei:granted
-klaus3:granted
-
-stud:granted
-
+student10:granted
+myStud:granted
+daniel19:denied
+tempUser:granted
+user:granted
+dummy:granted
+randomname:granted
 
 tudstk:granted
+rname:granted
+
+catel:granted
+
+
+elev:granted

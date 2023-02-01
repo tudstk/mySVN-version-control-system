@@ -1,4 +1,5 @@
-tudstk:/home/tudor/Desktop/myRepo
-elev:/home/tudor/Desktop/cli2/myrepo2
-klaus3:/home/tudor/Desktop/cli1/repoz
-stud:/home/tudor/Desktop/cli3/rep3
+tempUser:/home/tudor/Desktop/cli1/rep
+user:/home/tudor/Desktop/cli1/myRep
+dummy:/home/tudor/Desktop/cli2/myREP
+rname:/home/tudor/Desktop/cli2/rnameRepo
+tudstk:/home/tudor/Desktop/cli2/TudRep

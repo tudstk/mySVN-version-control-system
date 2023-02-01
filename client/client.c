@@ -54,15 +54,16 @@ int main(int argc, char *argv[])
     if (-1 == (bytesRead = read(0, msg, 100)))
     {
       perror("[Client] Failed to 'read' from client input!..");
-      exit(4);
+      exit(1);
     }
 
     msg[strlen(msg) - 1] = '\0';
     if (write(sd, msg, 100) <= 0)
     {
-      perror("[client]Eroare la write() spre  69.\n");
+      perror("[Client] Eroare la write() spre  server.\n");
       return errno;
     }
+    
 
     if (strcmp(msg, "login") == 0)
     {
@@ -87,7 +88,7 @@ int main(int argc, char *argv[])
 
       // add password to final message
       strcat(credentials, askPasswd);
-      printf("credentials:%s", credentials);
+      // printf("credentials:%s", credentials);
 
       if (write(sd, credentials, 200) < 0)
       {
@@ -107,7 +108,7 @@ int main(int argc, char *argv[])
       printf("\n\n%s\n", loginStatus);
       if (strstr(loginStatus, "You are logged in!\n\nWelcome, "))
       {
-        printf("\nYou have access to the following commands:\n--- clone\n--- add\n--- delete\n--- commit\n--- push\n--- revert\n");
+        printf("\nYou have access to the following commands:\n--- clone (download)\n--- add\n--- delete\n--- commit\n--- push\n--- revert\n");
         char accountCommand[100];
         memset(accountCommand, 0, 100);
         while (true)
@@ -138,7 +139,7 @@ int main(int argc, char *argv[])
             {
               char repoLocation[200];
               memset(repoLocation, 0, 200);
-              printf("Type local repository location:\n");
+              printf("Type local repository location:\n(make sure the last character is '/'.)\n");
               read(0, repoLocation, 200);
               repoLocation[strlen(repoLocation) - 1] = '\0';
               if (write(sd, repoLocation, 200) <= 0)
@@ -165,18 +166,6 @@ int main(int argc, char *argv[])
               printf("%s\n", cloneStatus);
             }
           }
-          else if (strcmp(accountCommand, "list") == 0)
-          {
-            char receivedEntity[200];
-            memset(receivedEntity, 0, 200);
-            int bRead;
-            while (bRead = read(sd, receivedEntity, sizeof(receivedEntity)) > 0)
-            {
-              // perror("[Server] Entity error\n");
-              printf("%s\n", receivedEntity);
-            }
-            printf("am terminat");
-          }
           else if (strstr(accountCommand, "add"))
           {
             char fileToAdd[200];
@@ -188,15 +177,6 @@ int main(int argc, char *argv[])
             {
               perror("[Client] Eroare la write() catre server.\n");
             }
-            // char localRepoName[200];
-            // memset(localRepoName, 0, 200);
-            // printf("Your local repo absolute path:\n");
-            // read(0, localRepoName, 200);
-            // if (write(sd, localRepoName, 200) <= 0)
-            // {
-            //   perror("[Client] Eroare la write() catre server.\n");
-            // }
-
             char addStatus[100];
             memset(addStatus, 0, 100);
             if (read(sd, addStatus, 100) <= 0)
@@ -209,7 +189,7 @@ int main(int argc, char *argv[])
           {
             char path_toDelete[1000];
             memset(path_toDelete, 0, 1000);
-            printf("Name of the file/directory that you want to delete:\n");
+            printf("Name of the file/directory that you want to delete:\n(make sure the last character is '/'.)\n");
             read(0, path_toDelete, 200);
             if (write(sd, path_toDelete, 200) <= 0)
             {
@@ -223,23 +203,6 @@ int main(int argc, char *argv[])
               perror("[Client] Eroare la read in client.\n");
             }
             printf("\n\n%s\n", deleteStatus);
-          }
-          else if (strstr(accountCommand, "exit"))
-          {
-            // char exitSignal[50];
-            // memset(exitSignal, 0, 50);
-            // strcpy(exitSignal, "semnal");
-            // if (write(sd, exitSignal, strlen(exitSignal)) <= 0)
-            // {
-            //   perror("[Client] Eroare la write() catre server.\n");
-            // }
-            // char ack[50];
-            // memset(ack, 0, 50);
-            // if (read(sd, ack, 50) <= 0)
-            // {
-            //   perror("[Client] Eroare la read in client.\n");
-            // }
-            exit(1);
           }
           else if (strstr(accountCommand, "logout"))
           {
@@ -289,10 +252,6 @@ int main(int argc, char *argv[])
               printf("%s\n", commitStatus);
             }
           }
-          else if (strstr(accountCommand, "check"))
-          {
-            printf("Ok check..\n");
-          }
           else if (strstr(accountCommand, "push"))
           {
             char pushMessage[100];
@@ -312,7 +271,7 @@ int main(int argc, char *argv[])
             {
               perror("[Client] failed to read revert message!\n");
             }
-            printf("\n%s\n", revertMessage);
+            printf("\n\n%s\n", revertMessage);
           }
           else
           {
@@ -371,8 +330,8 @@ int main(int argc, char *argv[])
     }
     else if (strcmp(msg, "exit") == 0)
     {
-      printf("\nGoodbye!\n\n");
-      exit(2);
+      printf("Goodbye!\n");
+      exit(1);
     }
     else if (strstr(msg, "login as admin"))
     {
@@ -414,7 +373,7 @@ int main(int argc, char *argv[])
       printf("\n\n%s\n", loginStatus);
       if (strstr(loginStatus, "Logged in succesfully!"))
       {
-        printf("You have access to the following commands:\n--- Change permission\n--- logout\n\n");
+        printf("You have access to the following commands:\n--- change permission\n--- logout\n\n");
         while (true)
         {
           printf("Type a command...\n\n");
